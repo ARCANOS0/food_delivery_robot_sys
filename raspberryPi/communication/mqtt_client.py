@@ -33,10 +33,10 @@ def on_disconnect(client, userdata, rc):
 # The following functions are examples of callback functions that will be executed
 # when a message is received on a specific, *subscribed* topic.
 
-def callback_esp32_sensor1(client, userdata, msg):
+def print_esp32_IMU(client, userdata, msg):
     # Define a function to handle messages on the topic "esp32/sensor1".
     # Arguments are standard for message callbacks.
-    print('ESP sensor1 data: ', msg.payload.decode('utf-8'))
+    print('ESP IMU sensor data: ', msg.payload.decode('utf-8'))
     # Print a label and the message payload.
     # msg.payload is the message content as bytes. .decode('utf-8') converts it to a string.
 
@@ -76,7 +76,7 @@ client.on_disconnect = on_disconnect   # Call the 'on_disconnect' function when 
 
 # Assign specific callback functions to specific topics using message_callback_add:
 # This is a more precise way than using the general client.on_message callback.
-client.message_callback_add('esp32/sensor1', callback_esp32_sensor1) # When message arrives on 'esp32/sensor1', call callback_esp32_sensor1.
+# client.message_callback_add('esp32/sensor1', callback_esp32_sensor1) # When message arrives on 'esp32/sensor1', call callback_esp32_sensor1.
 client.message_callback_add('esp32/sensor2', callback_esp32_sensor2) # When message arrives on 'esp32/sensor2', call callback_esp32_sensor2.
 client.message_callback_add('rpi/broadcast', callback_rpi_broadcast) # When message arrives on 'rpi/broadcast', call callback_rpi_broadcast.
 

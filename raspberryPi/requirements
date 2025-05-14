@@ -1,0 +1,5 @@
+- paho.mqtt.client library
+- pandas
+- tensorflow
+- tensorflow lite (for the raspberry pi)
+-
