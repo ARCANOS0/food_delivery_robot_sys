@@ -57,3 +57,5 @@ print(" --------------- Client Connected ---------------")
 
 time.sleep(1)  # تأخير ثانية بين كل رسالة والتانية
 raspberry_pi_client.loop_forever()
+
+de
