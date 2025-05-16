@@ -1,4 +1,10 @@
 # هيكل المشروع : مهم 
+## Simple Imaginary System design 
+### Upper System :: Raspberry pi 5 With the Camera Module 
+![alt text](<Simple System Design - upper system.png>)
+### Lower System :: Motors With Movement Sensors 
+![alt text](Untitled-2025-05-16-1501.png)
+
 my_delivery_robot/
 ├── README.md                 # Project overview, setup instructions, how to run
 ├── .gitignore                # Specify files to ignore in Git (build files, data, etc.)
