@@ -2,4 +2,4 @@
 - pandas
 - tensorflow
 - tensorflow lite (for the raspberry pi)
--
+- Torch
