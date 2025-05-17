@@ -12,7 +12,7 @@ from camera_feed import CameraFeed
 
 class ObjectDetector :
     """
-    حتحمل المودل ، حتشغله مع الكاميرا ، وحتوفرلنا UI for the results
+   UI for the results حتحمل المودل ، حتشغله مع الكاميرا ، وحتوفرلنا 
     """
 
     def __init__(self, camera_feed: CameraFeed, model_weight_path: str,
